@@ -31,13 +31,11 @@ public class RecordFragment extends Fragment {
 
     //Recording controls
     private FloatingActionButton mRecordButton = null;
-    private Button mPauseButton = null;
 
     private TextView mRecordingPrompt;
     private int mRecordPromptCount = 0;
 
     private boolean mStartRecording = true;
-    private boolean mPauseRecording = true;
 
     private Chronometer mChronometer = null;
     long timeWhenPaused = 0; //stores time when user clicks pause button

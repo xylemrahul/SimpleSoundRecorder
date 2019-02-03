@@ -29,22 +29,11 @@ public class RecordingService extends Service {
 
     private MediaRecorder mRecorder = null;
 
-    private long mStartingTimeMillis = 0;
-    private long mElapsedMillis = 0;
-    private int mElapsedSeconds = 0;
-    private OnTimerChangedListener onTimerChangedListener = null;
-    private static final SimpleDateFormat mTimerFormat = new SimpleDateFormat("mm:ss", Locale.getDefault());
-
-    private Timer mTimer = null;
     private TimerTask mIncrementTimerTask = null;
 
     @Override
     public IBinder onBind(Intent intent) {
         return null;
-    }
-
-    public interface OnTimerChangedListener {
-        void onTimerChanged(int seconds);
     }
 
     @Override
@@ -74,8 +63,6 @@ public class RecordingService extends Service {
         try {
             mRecorder.prepare();
             mRecorder.start();
-            mStartingTimeMillis = System.currentTimeMillis();
-
             //startTimer();
             //startForeground(1, createNotification());
 
@@ -92,7 +79,7 @@ public class RecordingService extends Service {
             count++;
 
             mFileName = getString(R.string.default_file_name)
-                    + "_" + count + ".mp4";
+                    + "_" + count + ".mp3";
             mFilePath = Environment.getExternalStorageDirectory().getAbsolutePath();
             mFilePath += "/SoundRecorder/" + mFileName;
 
@@ -102,7 +89,6 @@ public class RecordingService extends Service {
 
     public void stopRecording() {
         mRecorder.stop();
-        mElapsedMillis = (System.currentTimeMillis() - mStartingTimeMillis);
         mRecorder.release();
         Toast.makeText(this, getString(R.string.toast_recording_finish) + " " + mFilePath, Toast.LENGTH_LONG).show();
 
