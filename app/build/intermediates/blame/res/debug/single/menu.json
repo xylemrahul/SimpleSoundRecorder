@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\StudioProjects\\SoundRecorder\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "F:\\StudioProjects\\SoundRecorder\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "F:\\StudioProjects\\SimpleAudioRecorder\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "F:\\StudioProjects\\SimpleAudioRecorder\\app\\src\\main\\res\\menu\\menu_main.xml"
+    }
+]

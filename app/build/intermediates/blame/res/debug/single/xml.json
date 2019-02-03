@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\StudioProjects\\SimpleAudioRecorder\\app\\build\\intermediates\\res\\merged\\debug\\xml\\filepaths.xml",
+        "source": "F:\\StudioProjects\\SimpleAudioRecorder\\app\\src\\main\\res\\xml\\filepaths.xml"
+    },
+    {
+        "merged": "F:\\StudioProjects\\SoundRecorder\\app\\build\\intermediates\\res\\merged\\debug\\xml\\filepaths.xml",
+        "source": "F:\\StudioProjects\\SoundRecorder\\app\\src\\main\\res\\xml\\filepaths.xml"
+    }
+]

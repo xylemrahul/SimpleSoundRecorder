@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.melnykov:floatingactionbutton:1.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.android/build-cache/b9a04bca863dcc6908ca8700b507886d120acaf9/output/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/b9a04bca863dcc6908ca8700b507886d120acaf9/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b9a04bca863dcc6908ca8700b507886d120acaf9/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
